@@ -1,0 +1,98 @@
+.slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* atrás da login-box */
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #010a13; /* fallback */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-image 1.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-box {
+  background-color: rgba(10, 20, 40, 0.85);
+  backdrop-filter: blur(4px);
+  padding: 40px;
+  width: 320px;
+  text-align: center;
+  border: 2px solid #c8aa6e;
+  border-radius: 10px;
+}
+
+.logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #c8aa6e;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #e0c97f;
+}
+
+#mensagem {
+  margin-top: 15px;
+  font-weight: bold;
+}
+.login-links {
+  margin-top: 15px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.login-links a {
+  color: #c8aa6e;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.login-links a:hover {
+  color: #e0c97f;
+}
+
